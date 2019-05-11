@@ -1,0 +1,62 @@
+.onoffswitch {
+    position: relative; width: 65px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 27px; padding: 0; line-height: 27px;
+    border: 2px solid rgba(227, 227, 227, 0); border-radius: 27px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 27px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 41px;
+    border: 2px solid #E3E3E3; border-radius: 27px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #49E845;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #49E845;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
+.img_grid{
+    width:35px;
+    border-radius: 5px;
+    
+}
+.ativo{
+    color:green;
+    text-align: center;
+}
+.inativo{
+    color:red;
+    text-align: center;
+}
+.ativoLeft{
+    color:green;
+    text-align: left;
+}
+.inativoLeft{
+    color:red;
+    text-align: left;
+}
+.dropColorFont{
+    color:black;
+    width: 100% !important;
+}
+.formSearchColor{
+    color:#fff !important;
+}
+
+/* css animation  */
